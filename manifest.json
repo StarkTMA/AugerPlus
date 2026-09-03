@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "AugerPlus",
+	"description": "Chrome extension to hide and manage project cards in Auger.",
+	"version": "2.0.0",
+	"icons": {
+		"16": "images/favicon.png",
+		"32": "images/favicon.png",
+		"64": "images/favicon.png",
+		"128": "images/favicon.png"
+	},
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": [
+        "https://auger.minecraft.net/*"
+      ],
+			"js": ["content.js"],
+			"css": ["styles.css"],
+			"run_at": "document_idle"
+		}
+	]
+}

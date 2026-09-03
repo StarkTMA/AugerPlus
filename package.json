@@ -1,0 +1,22 @@
+{
+	"name": "auger-plus",
+	"version": "2.0.0",
+	"description": "Chrome extension to hide and manage project cards in Auger",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "tsc --noEmit && vite build",
+		"typecheck": "tsc --noEmit",
+		"test": "vitest run"
+	},
+	"devDependencies": {
+		"@types/archiver": "^6.0.4",
+		"@types/chrome": "^0.0.280",
+		"@types/node": "^22.10.2",
+		"archiver": "^7.0.1",
+		"happy-dom": "^15.11.7",
+		"typescript": "^5.7.2",
+		"vite": "^6.0.3",
+		"vitest": "^2.1.8"
+	}
+}
